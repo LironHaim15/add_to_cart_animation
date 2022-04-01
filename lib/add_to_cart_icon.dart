@@ -45,7 +45,7 @@ class CartIconKey extends State<AddToCartIcon>
   Widget build(BuildContext context) {
     // Improvement/Suggestion 5 -> Implementing Cart with Badge
     return Container(
-      width: 50,
+      //width: 50,
       child: Stack(
         alignment: Alignment.center,
         children: [
@@ -53,23 +53,23 @@ class CartIconKey extends State<AddToCartIcon>
             position: _offsetAnimation,
             child: this.widget.icon,
           ),
-          Positioned(
-              left: 30,
-              top: 5,
-              child: Container(
-                padding: EdgeInsets.all(2.0),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20.0),
-                  color: widget.colorBadge ??
-                      Theme.of(context).colorScheme.secondary,
-                ),
-                constraints: BoxConstraints(minWidth: 16, minHeight: 16),
-                child: Text(
-                  _qtdeBadge,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 10),
-                ),
-              )),
+//           Positioned(
+//               left: 30,
+//               top: 5,
+//               child: Container(
+//                 padding: EdgeInsets.all(2.0),
+//                 decoration: BoxDecoration(
+//                   borderRadius: BorderRadius.circular(20.0),
+//                   color: widget.colorBadge ??
+//                       Theme.of(context).colorScheme.secondary,
+//                 ),
+//                 constraints: BoxConstraints(minWidth: 16, minHeight: 16),
+//                 child: Text(
+//                   _qtdeBadge,
+//                   textAlign: TextAlign.center,
+//                   style: TextStyle(fontSize: 10),
+//                 ),
+//               )),
         ],
       ),
     );
